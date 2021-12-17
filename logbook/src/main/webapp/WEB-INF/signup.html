@@ -1,0 +1,53 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Asterios Lentzos, George Vamvakousis">
+        <meta name="keywords" content="HTML,CSS,LOGIN">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>csd4112</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="js/logbook.css">
+        <script src="js/main.js"></script>
+        <script src="js/extra.js"></script>
+    </head>
+
+    <body>
+        <form >
+                <h2>Sign in</h2>
+          </div>
+            <div class="container">
+              <legend><span class="number">1</span>Complete to sign in</legend>
+                  <div class="full">
+                      <label><b>Username:</b></label>
+                      <input type="text" name = "username" id="username" required>
+                  </div>
+
+                  <label><b>How about a magic trick?</b></label>
+                  <input type="radio" id="yes" value="yes" onclick="showCamera(2)">Yes
+                  <input type="radio" id="no" class="g2" value="no" checked onclick="hideCamera()">No
+
+
+                  <div class="full" id="photo">
+                      <video id='video' width='100%' height='auto' autoplay></video>
+                      <input type='button' id="snap" value ='Take Photo'>
+                      <input type='button' id="upload" value ='Upload Image'>
+                      <canvas id='canvas' width="520px" height='350px'></canvas>
+                  </div>
+
+                  <div class="full">
+                      <label><b>Password:</b></label>
+                      <input type="password" name="password" id="password">
+                  </div>
+                  
+                  <div id="message"></div>
+                  
+                  <button type="button" class="button" onclick="signin()">Log-in</button>
+             </div>
+        </form>
+    </body>
+    <footer>
+         <p>©Copyright 2019 by George Vamvakousis. All rights reversed.</p>
+    </footer>
+</html>
+

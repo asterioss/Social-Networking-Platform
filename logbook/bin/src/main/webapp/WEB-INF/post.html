@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create Post</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/logbook.css">
+        <script src="js/poutsa.js"></script>
+    </head>
+    <body>
+        <div id="message">
+                <h2>Create posts</h2>
+          </div>
+        <div class="container">
+            <legend><span class="number">1</span>Create a Post</legend>
+         <label><b>Description:</b></label>  
+        <input type="text" placeholder='A small description' name="desc" id="desc"><br>
+        
+        <label><b>Latitude:</b></label> 
+        <input type='text' placeholder='Enter the location latitude' id='lat' required pattern='[+-]?\d+(\.\d+)?([Ee][+-]?\d+)?' title='A valid latitude'> 
+        
+        <label><b>Longitude:</b></label> 
+        <input type='text' placeholder='Enter the location longitude' id='lon' required pattern='[+-]?\d+(\.\d+)?([Ee][+-]?\d+)?' title='A valid longitude'>
+         
+        <label><b>Image URL:</b></label>
+        <input type='text' placeholder='Enter image' name='image_url' id='image_url'>
+        
+        <label><b>Base64 Image:</b></label>
+        <input type='text' placeholder='Enter base64 image' name='base64' id='base64'>
+        
+        <div class="formarea_full">
+              <input id="input" onclick="add_listener_input();" type='file'>
+         </div>
+         
+         <div id="ekei"></div>
+        
+        <button class="button1" onclick="getLonLat()">Find Me.</button> 
+        <button class="button" onclick="home()">Home</button>
+        <button class="button" onclick="post()">Post</button>
+        </div>
+    </body>
+</html>
